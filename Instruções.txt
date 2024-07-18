@@ -1,0 +1,3 @@
+Coloque o EasyMySQL.py na pasta do seu projeto importe-o.
+
+isto é apenas uma versão demo da biblioteca.
