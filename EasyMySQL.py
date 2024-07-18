@@ -4,10 +4,11 @@ class Conectar:
     @staticmethod
     def conexao():
         return mysql.connector.connect(
-            host='localhost',
-            user='root',
-            password='admin',
-            database='bdyoutube'
+            host='Seu host',
+            user='Seu usuário',
+            password='Sua senha',
+            database='Seu banco de dados'
+            #Preencha essas informações que estão em aspas simples de acordo com seu host, usuário, senha, e banco de dados no MySQL Workbench
         )
 
 class CURSOR:
