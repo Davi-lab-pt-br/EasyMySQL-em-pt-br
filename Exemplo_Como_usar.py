@@ -14,3 +14,6 @@ cursor.executar_comando(comando)
 
 # Lembre-se de commit se necessário
 cursor.conexao.commit()
+
+conect.conexao.close()
+cursor.close()
