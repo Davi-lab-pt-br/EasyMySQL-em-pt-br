@@ -8,8 +8,15 @@ class Conectar:
             user='Seu usuário',
             password='Sua senha',
             database='Seu banco de dados'
-            #Preencha essas informações que estão em aspas simples de acordo com seu host, usuário, senha, e banco de dados no MySQL Workbench
         )
+    
+    def conexao_fechar():
+        mysql.connector.connect(
+            host='localhost',
+            user='root',
+            password='admin',
+            database='bdyoutube'
+        ).close()
 
 class CURSOR:
     def __init__(self):
@@ -18,3 +25,9 @@ class CURSOR:
 
     def executar_comando(self,comando):
         self.cursor.execute(comando)
+
+    def fechall(self):
+        self.cursor.fetchall()
+
+    def close(self):
+        self.cursor.close()
